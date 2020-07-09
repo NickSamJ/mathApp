@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Router, BrowserRouter, Switch, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Levels from './pages/Levels';
+import Level from './pages/Level';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="container-fluid p-0">
+        <Switch>
+          <Route path={'/'} exact component={Home}/>
+          <Route path={'/levels'} exact component={Levels}/>
+          {/* <Route path={'/level'} component={Level}/> */}
+          <Route path={'/level/:id'} exact  render={props => <Level {...props }/>}/>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

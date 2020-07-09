@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "title": "Level 1",
+      "completed_amount": 0,
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "tasks":[
+            {
+                "id": 1,
+                "title": "Посчитать сумму",
+                "completed_amount":  0
+        },
+        {
+            "id": 2,
+            "title": "Посчитать сумму",
+            "completed_amount":  0
+        }
+      ]
+          
+    },
+    {
+        "id": 2,
+        "title": "Level 2",
+        "completed_amount": 0,
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+        "tasks":[
+              {
+                  "id": 3,
+                  "title": "Поставить правильный знак",
+                  "completed_amount":  0
+          },
+          {
+              "id": 4,
+              "title": "Поставить правильный знак",
+              "completed_amount":  0
+          }
+        ]
+            
+      }
+]
