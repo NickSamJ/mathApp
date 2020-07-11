@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import TasksData from '../data/Tasks.json';
 
 const Level = (props) => {
@@ -6,7 +6,7 @@ const Level = (props) => {
     const currentTask = {};
     
     TasksData.forEach((task, id) => {
-        if(task.id == currentId){
+        if(task.id === currentId){
             currentTask.title  = task.title;
         }
     })

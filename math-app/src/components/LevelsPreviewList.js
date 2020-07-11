@@ -6,9 +6,9 @@ const LevelsPreviewList = (props) => {
         <div className="tasks-list">
             {props.tasks.map((details, data) => {
                 return(
-                    <NavLink to={"level/" + details.id}>
+                    <NavLink to={"level/" + details.id} key={details.id}>
                         <p>{details.title}</p>
-                        </NavLink>
+                    </NavLink>
                 )
             })}
         </div>

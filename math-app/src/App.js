@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router, BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Levels from './pages/Levels';
 import Level from './pages/Level';

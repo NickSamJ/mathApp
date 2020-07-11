@@ -1,0 +1,49 @@
+/***** Home Page *****/ 
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2a2a64;
+    // max-height: 100vh;
+    height: calc(100vh - 50px);
+    font-size: 1.5rem;
+    overflow: hidden;
+  
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: calc(100vh - 50px);
+      width: 100%;
+      align-self: center;
+      padding: 0 5px;
+      
+      a{
+        padding: 0 15px;
+        margin: 15px 0px;
+        border-left: 2px solid transparent;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        transition: 0.2s;
+        line-height: 1;
+        &:hover,
+        &:active{
+          border-color: white;
+          transition: 0.5s;
+          text-decoration: none;
+        }
+      }
+    }
+    .footer{
+      text-align: right;
+      height: 10vh;
+      min-height: 40px;
+      a{
+        color: white;
+        margin-right: 20px;
+      }
+      
+    }
+  }

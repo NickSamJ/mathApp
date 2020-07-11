@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~animate.css";
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap');
+@import "./styles/Home.scss";
+@import "./styles/Navigation.scss";
+@import "./styles/Levels.scss";
+@import "./styles/Commons/AuxClasses.scss";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,50 +22,4 @@ code {
 
 *{
   font-family: 'Jura', sans-serif;
-}
-
-/***** Home Page *****/ 
-.home{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #2a2a64;
-  padding: 20px 0;
-  width: 100%;
-  height: 100vh;
-  font-size: 24px;
-
-  .menu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 300px;
-    align-self: center;
-    margin: 180px 0;
-    
-    a{
-      padding: 0 15px;
-      margin: 15px 0px;
-      border-left: 2px solid transparent;
-      color: white;
-      display: inline-block;
-      width: 100%;
-      transition: 0.2s;
-      line-height: 1;
-      &:hover,
-      &:focus{
-        border-color: white;
-        transition: 0.5s;
-        text-decoration: none;
-      }
-    }
-  }
-  .footer{
-    text-align: right;
-    a{
-      color: white;
-      margin-right: 20px;
-    }
-    
-  }
 }
